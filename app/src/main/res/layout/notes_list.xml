@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        app:cardElevation="3dp"
+        app:cardBackgroundColor="@color/white"
+        app:cardCornerRadius="3dp"
+        android:elevation="3dp"
+        app:cardUseCompatPadding="true">
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                  android:layout_width="match_parent"
+                  android:layout_height="match_parent"
+                  android:orientation="vertical">
+
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewTitle"
+                android:text="Title"
+                android:textSize="18sp"
+                android:maxLines="1"
+                android:ellipsize="end"
+                android:textStyle="bold"
+                android:textColor="@color/black"/>
+        <View
+                android:id="@+id/divider"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="@color/colorAccent"
+        />
+        <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/textViewDescription"
+                android:text="Description"
+                android:textSize="18sp"
+                android:ellipsize="end"
+                android:maxLines="2"
+                android:textStyle="bold"
+                android:textColor="@color/colorPrimaryDark"/>
+    </LinearLayout>
+</android.support.v7.widget.CardView>
